@@ -25,6 +25,7 @@ const Page1 = () => {
 
   return (
     <MainContainer>
+      <h1>Page1</h1>
       <Form onSubmit={handleSubmit}>
         <div className="form-item">
           <span>아이디</span>
@@ -56,6 +57,13 @@ const MainContainer = styled.div`
   border-radius: 30px;
   color: #0d3b66;
   box-shadow: 2px 4px 8px;
+
+  h1 {
+    text-align: center;
+    font-weight: 600;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
 `;
 
 const Form = styled.form`
@@ -100,6 +108,7 @@ const Form = styled.form`
     border-radius: 20px;
     font-weight: 600;
     font-size: 1rem;
+    cursor: pointer;
   }
 `;
 
